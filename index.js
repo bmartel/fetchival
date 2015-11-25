@@ -32,7 +32,7 @@
     return fetchival.fetch(url, opts)
       .then(function (response) {
         if(response.status == 204) {
-					return {}
+	  return {}
         }
         if (response.status >= 200 && response.status < 300) {
           return response[opts.responseAs]()
