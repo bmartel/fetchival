@@ -48,7 +48,7 @@
 
     var _ = function (u, o) {
       // Extend parameters with previous ones
-      u = url + '/' + u
+      u = url + (u !== '' ? '/' : '') + u
       o = o || {}
       defaults(o, opts)
       return fetchival(u, o)
