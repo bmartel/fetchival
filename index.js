@@ -70,8 +70,8 @@
       return _fetch('PATCH', url, opts, data)
     }
 
-    _.delete = function () {
-      return _fetch('DELETE', url, opts)
+    _.delete = function (data) {
+      return _fetch('DELETE', url, opts, data)
     }
 
     return _
